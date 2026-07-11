@@ -1,0 +1,5 @@
+#!/bin/bash
+
+nvim ~/.config/hypr/hyprland.conf
+
+hyprctl reload

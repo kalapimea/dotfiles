@@ -1,0 +1,11 @@
+#!/bin/bash
+
+choice=$(printf "Shutdown\nReboot\nSuspend\nLogout" | rofi -dmenu)
+
+case "$choice" in
+    Shutdown) systemctl poweroff ;;
+    Reboot) systemctl reboot ;;
+    Suspend) systemctl suspend ;;
+    Logout) hyprctl dispatch exit ;;
+esac
+
