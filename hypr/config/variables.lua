@@ -1,0 +1,6 @@
+mainMod = "SUPER"
+terminal = "kitty"
+fileManager = "dolphin"
+menu = "rofi -show drun"
+browser = "opera-gx"
+calc = "rofi -show calc -modi calc"
