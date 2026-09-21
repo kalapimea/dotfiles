@@ -1,0 +1,66 @@
+{
+	"position": "top",
+	"margin-top": 18,
+
+	"modules-center" : [
+		"tray",
+		"clock",
+		"hyprland/workspaces",
+		"custom/wallpaper",
+		"network"
+	],
+
+	"hyprland/submap": {
+		"format": "{}",
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1": "鱼",
+			"2": "爱",
+			"3": "梦",
+			"4": "花",
+			"5": "霓",
+			"6": "海",
+			"7": "汉",
+			"8": "缘",
+			"9": "星",
+			"10": "雪",
+			
+			"default": "",
+			"urgent": ""
+		},
+		
+		"persistent-workspaces": {
+		"*": 5
+		},
+		
+		"enable-bar-scroll": true,
+		"on-click": "hyprctl dispatch workspace $WAYBAR_WORKSPACE_ID"
+	},
+		
+	"tray": {
+		"spacing": 10
+		// "icon-size": 21
+
+	},
+	
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"format-alt": "{:%Y-%m-%d}"
+	},
+
+	"network": {
+		 "format-wifi": "{signalStrength}% ",
+		 "format-disconnected": ""
+	},
+
+	"custom/wallpaper": {
+		"format": "[新]",
+		"on-click": "/home/atte/bin/random-wallpaper.sh",
+    "tooltip-format": "Change Wallpaper"
+	}
+
+}

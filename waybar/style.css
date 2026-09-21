@@ -1,0 +1,98 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "Rubic", "JetBrainsMono Nerd Font Propa", "Noto Sans CJK JP", "Noto Sans CJK SC";
+  font-size: 16px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.modules-center {
+  background: #33363b;
+  padding: 6px 12px;
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+window#waybar {
+  background: transparent;
+}
+
+tooltip {
+  background: rgba(67, 72, 80, 0.9);
+  color: #ffffff;
+  border: 1px solid #7ebc59;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+tooltip label {
+  color: #ffffff;
+  padding: 6px;
+}
+
+#workspaces {
+  background: transparent;
+  padding: 0;
+  margin: 0 10px 0 10px;
+  border: none;
+  box-shadow: none;
+}
+
+#workspaces button {
+  padding: 0px 6px;
+  margin: 0px 6px;
+  border-radius: 16px;
+  color: #ff7bac;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  background: linear-gradient(135deg, #52a5ce 0%, #d3b6d3 50%, #ff7bac 100%);
+  color: #33363b;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  background-color: rgba(67, 72, 80, 0.9);
+  color: #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #e94560;
+  color: #33363b;
+}
+
+#network,
+#clock,
+#window,
+#submap {
+  background-color: #33363b;
+  padding: 0 8px;
+  margin: 0 5px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+
+
+#custom-wallpaper {
+  color: #CCFFCC;
+  background: transparent;
+}
+#submap {
+  color: #4fd3c4;
+}
+
+#clock {
+  color: #efefef;
+  margin: 0;
+}
+
+#network {
+  color: #efefef;
+}
